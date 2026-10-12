@@ -12,30 +12,6 @@ to accommodate its new position.
     <em>Interactive demonstration of the Drag&Drop effect driven by smooth drag gestures and custom 3D perspective transformations.</em>
 </p>
 
-## Getting started
-
-With Flutter installed:
-
-```sh
-flutter pub get
-flutter run
-```
-
-To run the app in Chrome with FVM, generate the web platform files first. The
-project directory contains hyphens, so specify the valid Dart project name:
-
-```sh
-fvm flutter create --platforms=web --project-name flutter_drag_n_drop .
-fvm flutter pub get
-fvm flutter run -d chrome
-```
-
-Run the tests with:
-
-```sh
-flutter test
-```
-
 ## How to try it
 
 1. Long-press a card to enter edit mode and start dragging it.
@@ -77,7 +53,6 @@ while keeping edit mode active. `exitEditMode` resets the entire state.
 - `AnimatedScale` slightly shrinks cards in edit mode. Tapping anywhere exits
   edit mode.
 
-
 This demo retains those interaction concepts while removing dependencies on
 the rest of the application. Reordering is local and is not persisted or sent
 to a backend.
@@ -86,8 +61,8 @@ to a backend.
 
 ```text
 lib/
-  drag_drop_controller.dart  # drag-and-drop state and operations
-  main.dart                 # demo UI and gesture wiring
+  drag_drop_controller.dart   # drag-and-drop state and operations
+  main.dart                   # demo UI and gesture wiring
 test/
   drag_drop_controller_test.dart
 ```
